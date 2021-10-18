@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Circle.css";
 
-const Circle = () => {
+/* const Circle = () => {
   const [className, setClassName] = useState("circle");
 
   return (
@@ -12,11 +12,16 @@ const Circle = () => {
       }
     ></div>
   );
-};
+}; */
 
-/*const Circle = () => {
+const Circle = () => {
   const [state, setState] = useState(true);
 
-  return <div className={state === true ? "circle" : "circle-off"}></div>;
-};*/
+  return (
+    <div
+      className={state === true ? "circle" : "circle-off"}
+      onClick={() => setState(state === true ? false : true)}
+    ></div>
+  );
+};
 export default Circle;
