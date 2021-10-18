@@ -15,12 +15,12 @@ import "./Circle.css";
 }; */
 
 const Circle = () => {
-  const [state, setState] = useState(true);
+  const [selected, setSelected] = useState(true);
 
   return (
     <div
-      className={state === true ? "circle" : "circle-off"}
-      onClick={() => setState(state === true ? false : true)}
+      className={selected ? "circle" : "circle circle-off"}
+      onClick={() => setSelected(!selected)}
     ></div>
   );
 };
