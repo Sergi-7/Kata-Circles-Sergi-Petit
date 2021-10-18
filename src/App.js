@@ -4,15 +4,7 @@ import "./Components/Circle/Circle.js";
 import Circle from "./Components/Circle/Circle.js";
 
 function App() {
-  return (
-    <>
-      <Circle></Circle>
-      <Circle></Circle>
-      <Circle></Circle>
-      <Circle></Circle>
-      <Circle></Circle>
-    </>
-  );
+  return <Circle></Circle>;
 }
 
 export default App;

@@ -14,4 +14,9 @@ const Circle = () => {
   );
 };
 
+/*const Circle = () => {
+  const [state, setState] = useState(true);
+
+  return <div className={state === true ? "circle" : "circle-off"}></div>;
+};*/
 export default Circle;
