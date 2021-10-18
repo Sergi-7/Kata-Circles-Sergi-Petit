@@ -4,7 +4,10 @@ import "./Components/Circle/Circle.js";
 import Circle from "./Components/Circle/Circle.js";
 
 function App() {
-  return <Circle></Circle>;
+  const circles = [{}, {}, {}, {}, {}];
+  return circles.map((circle) => {
+    return <Circle></Circle>;
+  });
 }
 
 export default App;
